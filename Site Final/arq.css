@@ -15,8 +15,7 @@
                 background-color: transparent;
                 text-align: center;
 			}
-            nav{
-                background-color: black;
+            #nav{
                 position: fixed;
                 top: 0;
                 width: 100%;
@@ -36,6 +35,7 @@
             ul {
                 margin: 0;
                 color: white;
+                font-family: Quicksand;
             }
             .center {
                 display: block;
@@ -45,10 +45,12 @@
             form, a, h1{
                 text-align: center;
                 font-family: Quicksand;
+                color: white;
             }
             h2{
                 text-align: left;
                 font-family: Quicksand;
+                color: white;
             }
             body{
                 margin-left: auto;
@@ -59,6 +61,7 @@
                 background-color: transparent;
                 text-decoration: none;
                 font-family: Quicksand;
+                color: white;
 	        }
             input {
                 color: blue;
