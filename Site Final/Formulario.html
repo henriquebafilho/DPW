@@ -10,6 +10,7 @@
     <style>
 		p {
             color: yellow;
+            text-align: left;
 	    }
         body {
             background-color: black;
@@ -17,39 +18,52 @@
         form {
             color: white;  
         }
+        section{
+            text-align: left;
+        }
 	</style>
 </head>
 <body>
-
-<h1 style="text-align:center; color: red;">Quiz Eddie the Head</h1>
-
-<form>
-	<p>1. Insira seu nome completo</p>
-	<input type="text" name="nome" size="50"><br>
-    
-    <p>2. Insira seu sexo</p>
-    <input type="radio" name="genero" value="fem">Feminino<br>
-    <input type="radio" name="genero" value="mas">Masculino<br>
-
-	<p>3. Insira sua data de nascimento</p>
-     <input type="date" name="nascimento"><br>
-    
-    <p>4. Insira seu endereço</p>
-	 <input type="text" name="endereco"><br>
-    <p>Número</p>
-     <input type="number" name="numero" min="0" max="99999">
-    <p>Complemento</p>
-     <input type="number" name="complemento" min="0" max="99999">
-    <p>Cidade</p>
-     <input type="text" name="cidade"><br>	 
-	 
-	<p>5. Insira seu e-mail</p> 
-	 <input type="text" name="cidade"><br>
-    <br>
-    <button type="button">Enviar</button><br>
-    <br>
-    <a href="Quiz.html">Clique aqui para fazer seu teste de conhecimento sobre o Eddie</a>
- </form>
- 
+    <header>
+        <h1 style="text-align:center; color: red;">Quiz Eddie the Head</h1>
+    </header>
+    <main>
+        <form>
+            <section>
+                <p>1. Insira seu nome completo</p>
+                <input type="text" name="nome" size="50"><br>
+            </section>
+            <section>
+                <p>2. Insira seu sexo</p>
+                <input type="radio" name="genero" value="fem">Feminino<br>
+                <input type="radio" name="genero" value="mas">Masculino<br>
+            </section>
+            <section>
+                <p>3. Insira sua data de nascimento</p>
+                <input type="date" name="nascimento"><br>
+            </section>
+            <section>
+                <p>4. Insira seu endereço</p>
+                <input type="text" name="endereco"><br>
+                <p>Número</p>
+                <input type="number" name="numero" min="0" max="99999">
+                <p>Complemento</p>
+                <input type="number" name="complemento" min="0" max="99999">
+                <p>Cidade</p>
+                <input type="text" name="cidade"><br>	 
+            </section>
+            <section>
+                <p>5. Insira seu e-mail</p> 
+                <input type="text" name="cidade"><br>
+                <br>
+                <button type="button">Enviar</button><br>
+                <br>
+            </section>
+         </form>
+    </main>
+    <footer>
+        <hr>
+        <a href="Quiz.html"><p>Clique aqui para fazer seu teste de conhecimento sobre o Eddie</p></a>
+    </footer>
 </body>
 </html>
