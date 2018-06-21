@@ -30,10 +30,11 @@
         function login(){
             var userEmail = document.getElementById("user").value;
             var userSenha = document.getElementById("senha").value;
-            if((userEmail=="rickao@gmail.com") || (userEmail=="hernan@gmail.com") && (userSenha=="123")){
+            if(((userEmail=="rickao@gmail.com") || (userEmail=="hernan@gmail.com")) && (userSenha=="123")){
                 alert('Login feito com sucesso');
                 document.getElementById("erro").style.visibility = "hidden";
             }else {
+                alert('Usuário ou senha incorretos');
                 document.getElementById("erro").style.visibility = "visible";
             }
         }
