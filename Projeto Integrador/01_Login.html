@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet+</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
     <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -23,7 +27,7 @@
         function login(){
             var userEmail = document.getElementById("user").value;
             var userSenha = document.getElementById("senha").value;
-            if(((userEmail=="rickao@gmail.com") || (userEmail=="hernan@gmail.com")) && (userSenha=="123")){
+            if((userEmail=="rickao@gmail.com") && (userSenha=="123")){
                 alert('Login feito com sucesso');
             }else {
                 alert('Usuário ou senha incorretos');
