@@ -15,31 +15,31 @@
 </head>
 
 <body><div class="login-clean">
-    <form method="post">
+    <form method="post" id="logando">
         <h2 class="sr-only">Login Form</h2>
         <div class="illustration"><img src="assets01_Login/img/logo.png" style="width:236px;" /></div>
         <div class="form-group"><input class="form-control" type="email" id="user" name="email" placeholder="Email" /></div>
         <div class="form-group"><input class="form-control" type="password" id="senha" name="password" placeholder="Senha" /></div>
-        <div class="form-group"><button class="btn btn-primary btn-block" type="submit" onclick="login()" style="background-color:rgb(255,161,0);">Entrar</button></div>
+        <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color:rgb(255,161,0);">Entrar</button></div>
     </form>
 </div>
     <script>
-            function login(){
+            function login(evt){
                 var userEmail = document.getElementById("user").value;
                 var userSenha = document.getElementById("senha").value;
-                if((userEmail=="rickao@gmail.com") && (userSenha=="123")){
+                var form = document.getElementById("logando");
+                if((userEmail=="hernan@gmail.com") && (userSenha=="123")){
                     //alert('Login feito com sucesso!');
-                    window.location.href = "#index.html";
+                    window.location.href = "index.html";
                 }else {
                     alert('Usuário ou senha incorretos');
                 }
+                form.checkValidity();
+                evt.preventDefault();
             }
+        document.getElementById("logando").addEventListener("submit", function(event){
+                login(event);})
     </script>
-    <script>
-            document.getElementById("userLoginForm").addEventListener("submit", function(evt) {
-                submitLogin(evt);
-            });
-        </script>
     <script src="assets01_Login/js/jquery.min.js"></script>
     <script src="assets01_Login/bootstrap/js/bootstrap.min.js"></script>
 </body>
