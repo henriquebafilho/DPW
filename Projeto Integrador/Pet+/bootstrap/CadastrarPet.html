@@ -55,10 +55,6 @@
         <img src="assetsVitrine/imagem/hernanzinho.jpg"ss class="img-circle" height="65" width="65" alt="Avatar">
           <p>Hernanzinho, moleque charmoso.</p>
       </div>
-      <div class="well">
-        <p><a href="#">Sobre</a></p>
-        
-      </div>
     </div>
     <div class="col-sm-7">
     
@@ -75,7 +71,23 @@
       <div class="row">
         <div class="col-sm-9">
           <div class="well">
-            <p>Labrador dócil e agitado, gosta de brincar, perfeito para as crianças disponível para adoção.</p>
+            <form style="text-align: left">
+              <h1>Complete com os dados do seu Pet</h1>
+              <br>
+              <input type="text" name="animal" placeholder="Nome Completo"><br>
+              <br>
+              <input type="text" name="animal" placeholder="Raça"><br>
+              <h4>Sexo:</h4>
+              <input type="radio" name="genero" value="masculino"> Masculino
+              <input type="radio" name="genero" value="feminino"> Feminino<br>
+              <h4>Data de Nascimento:</h4>
+              <input type="date" name="aniversario"><br>
+              <h4>Seu pet está disponível para venda/adoção?</h4>
+              <input type="radio" name="negocio" value="sim"> Sim
+              <input type="radio" name="negocio" value="nao"> Não<br>
+              <br>
+              <button type="submit" value="enviar" style="te: center">Cadastrar</button>
+            </form>
           </div>
         </div>
       </div>

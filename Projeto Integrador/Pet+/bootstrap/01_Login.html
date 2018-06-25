@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="assets01_Login/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets01_Login/css/Navigation-with-Search.css">
     <link rel="stylesheet" href="assets01_Login/css/styles.css">
+    <style>
+        body{
+            background-color: #ffa100;
+        }
+    </style>
 </head>
 
 <body><div class="login-clean">
@@ -29,7 +34,6 @@
                 var userSenha = document.getElementById("senha").value;
                 var form = document.getElementById("logando");
                 if((userEmail=="hernan@gmail.com") && (userSenha=="123")){
-                    //alert('Login feito com sucesso!');
                     window.location.href = "index.html";
                 }else {
                     alert('Usuário ou senha incorretos');
@@ -37,8 +41,7 @@
                 form.checkValidity();
                 evt.preventDefault();
             }
-        document.getElementById("logando").addEventListener("submit", function(event){
-                login(event);})
+        document.getElementById("logando").addEventListener("submit", function(event){login(event);})
     </script>
     <script src="assets01_Login/js/jquery.min.js"></script>
     <script src="assets01_Login/bootstrap/js/bootstrap.min.js"></script>

@@ -7,26 +7,29 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFA100">
-      <a class="navbar-brand" href="#">Pet+</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-inverse" style="background-color: #ffa100">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Início<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Cadastrar Pet</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Negociar Pet</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-      
+      <a class="navbar-brand" href="#" style="color: #673300">Pet+</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#" style="color: #673300">Início</a></li>
+        <li class="active"><a href="CadastrarPet.html" style="color: #673300">Cadastrar Pet</a></li>
+        <li><a href="SeusPets.html" style="color: #673300">Seus Pets</a></li>
+          <li><a href="NegociarPet.html" style="color: #673300">Negociar Pet</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" style="color: #673300"><span class="glyphicon glyphicon-user"></span> Hernan Matiello</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>   
     
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
