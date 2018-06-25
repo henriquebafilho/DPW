@@ -23,17 +23,23 @@
         <div class="form-group"><button class="btn btn-primary btn-block" type="submit" onclick="login()" style="background-color:rgb(255,161,0);">Entrar</button></div>
     </form>
 </div>
-<script>
-        function login(){
-            var userEmail = document.getElementById("user").value;
-            var userSenha = document.getElementById("senha").value;
-            if((userEmail=="rickao@gmail.com") && (userSenha=="123")){
-                alert('Login feito com sucesso!');
-            }else {
-                alert('Usuário ou senha incorretos');
+    <script>
+            function login(){
+                var userEmail = document.getElementById("user").value;
+                var userSenha = document.getElementById("senha").value;
+                if((userEmail=="rickao@gmail.com") && (userSenha=="123")){
+                    //alert('Login feito com sucesso!');
+                    window.location.href = "#index.html";
+                }else {
+                    alert('Usuário ou senha incorretos');
+                }
             }
-        }
-</script>
+    </script>
+    <script>
+            document.getElementById("userLoginForm").addEventListener("submit", function(evt) {
+                submitLogin(evt);
+            });
+        </script>
     <script src="assets01_Login/js/jquery.min.js"></script>
     <script src="assets01_Login/bootstrap/js/bootstrap.min.js"></script>
 </body>
