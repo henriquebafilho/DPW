@@ -2,3 +2,36 @@
 h1, ul, p, a, form, button{
     font-family: Quicksand;
 }
+body { 
+    background-color: #E9EBEE;     
+}
+footer {
+    background-color: #ffa100;
+    color: #673300;
+    padding: 15px;
+}
+ul li.active a{
+    background-color: #FF6E00 !important;
+}
+ul li a:hover{
+    background-color: #ff8200 !important;;
+}
+ul li a{
+    color: #673300 !important;
+}
+div .well, div .panel-body{
+    background-color: #ffa100; 
+    color: #673300;
+    border: 2px solid #FF6E00;
+}
+div .thumbnail{
+    background-color: #ffa100;
+    border: 0px;
+}
+div .col-sm-2 well{
+    background-color:#FF6E00; 
+    border:0px;
+}
+div .panel panel-default text-left{
+    border: 2px solid #FF6E00;
+}
