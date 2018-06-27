@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Cadastrar Pet</title>
+        <title>Negociar Pet</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,8 +11,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-
-        <nav class="navbar navbar-inverse" style="background-color: #ffa100">
+        <nav class="navbar navbar-inverse" style="background-color: #ffa100; border: 0px; ">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -24,11 +23,11 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Início</a></li>
-                        <li class="active"><a href="CadastrarPet.html">Cadastrar Pet</a></li>
-                        <li><a href="SeusPets.html">Seus Pets</a></li>
-                        <li><a href="DisponibilizarVenda.html">Vender Pet</a></li>
-                        <li><a href="DoarPet.html" style="color: #673300">Doar Pet</a></li>
+                        <li><a href="index.html" style="color: #673300">Início</a></li>
+                        <li><a href="CadastrarPet.html" style="color: #673300">Cadastrar Pet</a></li>
+                        <li><a href="SeusPets.html" style="color: #673300">Seus Pets</a></li>
+                        <li><a href="DisponibilizarVenda.html" style="color: #673300">Vender Pet</a></li>
+                        <li class="active"><a href="DoarPet.html" style="color: #673300">Doar Pet</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#" style="color: #673300"><span class="glyphicon glyphicon-user"></span> Hernan Matiello</a></li>
@@ -47,12 +46,11 @@
                     <p><a href="https://www.facebook.com/taylorsfanboy" target="_blank">facebook.com/taylorsfanboy</a></p>
                 </div>
                 <div class="col-sm-7">
-
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="panel panel-default text-left">
-                                <div class="panel-body">
-                                    <p style="text-align: center" contenteditable="true"><strong>Cadastre seu Pet!</strong></p>
+                                <div style="background-color: #ffa100;" class="panel-body">
+                                    <p style="text-align: center" contenteditable="true"><strong>Vender Pet</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -61,28 +59,18 @@
                         <div class="col-sm-12">
                             <div class="well">
                                 <form style="text-align: left">
-                                    <h1>Complete com os dados do seu Pet</h1>
+                                    <h1 style="text-align: center">Complete com os dados do seu Pet</h1>
                                     <br>
-                                    <h4 style="text-align: center">Insira o nome completo do seu Pet:</h4>
-                                    <input type="text" name="animal" size=40% placeholder=" Nome completo"><br>
+                                    <h4>Qual dos seus Pets você deseja vender?</h4>
+                                    <select name="Pets">
+                                        <option value="tp1">Técnicas de Progamação 1</option>
+                                        <option value="dpw">Desenvolvimento de Páginas Web</option>
+                                        <option value="mb">Matemática Básica</option>
+                                        <option value="oc">Organização de Computadores</option>
+                                    </select>
                                     <br>
-                                    <h4>Qual é seu animal?</h4>
-                                    <input type="text" name="animal" size=40% placeholder=" Animal"><br>
-                                    <br>
-                                    <h4>Insira a raça do seu Pet:</h4>
-                                    <input type="text" name="animal" size=40% placeholder=" Raça"><br>
-                                    <br>
-                                    <h4>Sexo:</h4>
-                                    <input type="radio" name="genero" value="masculino"> Masculino 
-                                    <input type="radio" name="genero" value="feminino"> Feminino<br>
-                                    <br>
-                                    <h4>Data de Nascimento:</h4>
-                                    <input type="date" name="aniversario"><br>
-                                    <br>
-                                    <h4>Seu pet está disponível para venda/adoção?</h4>
-                                    <input type="radio" name="negocio" value="sim"> Sim
-                                    <input type="radio" name="negocio" value="nao"> Não<br>
-                                    <br>
+                                    <h4>Insira o preço do seu Pet:</h4>
+                                    <h5>R$ <input type="number" name="quantidade" placeholder="Preço"></h5>
                                     <button type="submit" value="enviar">Cadastrar</button>
                                 </form>
                             </div>
@@ -119,7 +107,6 @@
                 </div>
             </div>
         </div>
-
         <footer class="container-fluid text-center">
             <p>Footerzão</p>
         </footer>
