@@ -30,7 +30,7 @@
                         <li class="active"><a href="DoarPet.html" style="color: #673300">Doar Pet</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" style="color: #673300"><span class="glyphicon glyphicon-user"></span> Hernan Matiello</a></li>
+                        <li><a href="Inicio.html" style="color: #673300"><span class="glyphicon glyphicon-user"></span> Hernan Matiello</a></li>
                     </ul>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                         <div class="col-sm-12">
                             <div class="well">
                                 <form style="text-align: left" id="doando">
-                                    <h1 style="text-align: center">Complete com os dados do seu Pet</h1>
+                                    <h1 style="text-align: center">Doe seu Pet</h1>
                                     <br>
                                     <h4>Qual dos seus Pets você deseja doar?</h4>
                                     <select>
@@ -62,15 +62,27 @@
                                     </select>
                                     <br>
                                     <br>
-                                    <h4>Insira o preço do seu Pet:</h4>
-                                    <h5>R$ <input type="number" name="quantidade" placeholder="Preço"></h5>
+                                    <h4>Por que você deseja doar seu animal?</h4>
+                                    <textarea name="message" rows="15" cols="50" placeholder="Insira o motivo da sua doação"></textarea><br>
                                     <br>
                                     <button type="submit" value="enviar">Disponibilizar Pet para doação</button>
+                                    <br>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
+                <script>
+                    function doacao(evento){
+                        var form = document.getElementById("doando");
+                        
+                        window.location.href = "SeusPetsDoado.html";
+
+                        form.checkValidity();
+                        evento.preventDefault();
+                    }
+                    document.getElementById("doando").addEventListener("submit", function(event){doacao(event);})
+                </script>
                 <div style="background-color:#FF6E00; border: 0px;" class="col-sm-2 well">
                     <div style="background-color:#ffa100; border: 0px;"  class="thumbnail">
                         <p>Cão de Rickão</p>
