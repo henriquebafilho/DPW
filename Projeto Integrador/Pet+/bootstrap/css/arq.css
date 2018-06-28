@@ -1,5 +1,5 @@
 @charset "UTF-8";
-h1, ul, p, a, form, button{
+h1, h4, ul, p, a, form, button{
     font-family: Quicksand;
 }
 body { 
