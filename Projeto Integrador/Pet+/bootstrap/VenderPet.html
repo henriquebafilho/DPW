@@ -19,7 +19,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="#" style="color: #673300">Pet+</a>
+                    <a class="navbar-brand" href="Inicio.html" style="color: #673300">Pet+</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
@@ -49,7 +49,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="well">
-                                <form style="text-align: left">
+                                <form style="text-align: left" id="vendendo">
                                     <h1 style="text-align: center">Venda seu Pet</h1>
                                     <br>
                                     <h4>Qual dos seus Pets você deseja vender?</h4>
@@ -77,12 +77,23 @@
                                     <h4>Se sim, em até quantas vezes?</h4>
                                     <input type="number" name="Parcelas" min="1" max="12"><br>
                                     <br>
-                                    <button type="submit" value="enviar">Cadastrar</button>
+                                    <button type="submit" value="enviar">Disponibilizar Pet para venda</button>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
+                <script>
+                    function venda(evento){
+                        var form = document.getElementById("vendendo");
+                        
+                        window.location.href = "SeusPetsVenda.html";
+
+                        form.checkValidity();
+                        evento.preventDefault();
+                    }
+                    document.getElementById("vendendo").addEventListener("submit", function(event){venda(event);})
+                </script>
                 <div style="background-color:#FF6E00; border: 0px;" class="col-sm-2 well">
                     <div style="background-color:#ffa100; border: 0px;"  class="thumbnail">
                         <p>Cão de Rickão</p>
