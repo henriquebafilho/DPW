@@ -20,7 +20,7 @@
     <body><div class="login-clean">
         <form method="post" id="logando">
             <h2 class="sr-only">Login Form</h2>
-            <div class="illustration"><img src="assets01_Login/img/logo.png" style="width:236px;" /></div>
+            <div class="illustration"><img src="assets01_Login/img/logo.png" style="width:236px;" alt="logo"/></div>
             <div class="form-group"><input class="form-control" type="email" id="user" name="email" placeholder="Email" /></div>
             <div class="form-group"><input class="form-control" type="password" id="senha" name="password" placeholder="Senha" /></div>
             <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color:rgb(255,161,0);">Entrar</button></div>
@@ -32,7 +32,7 @@
                 var userSenha = document.getElementById("senha").value;
                 var form = document.getElementById("logando");
                 if((userEmail=="hernan@gmail.com") && (userSenha=="123")){
-                    window.location.href = "index.html";
+                    window.location.href = "Inicio.html";
                 }else {
                     alert('Usuário ou senha incorretos');
                 }

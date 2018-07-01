@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Doar Pet</title>
+        <title>Vender Pet</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -26,8 +26,8 @@
                         <li><a href="Inicio.html" style="color: #673300">Início</a></li>
                         <li><a href="SeusPets.html" style="color: #673300">Seus Pets</a></li>
                         <li><a href="CadastrarPet.html" style="color: #673300">Cadastrar Pet</a></li>
-                        <li><a href="VenderPet.html" style="color: #673300">Vender Pet</a></li>
-                        <li class="active"><a href="DoarPet.html" style="color: #673300">Doar Pet</a></li>
+                        <li class="active"><a href="VenderPet.html" style="color: #673300">Vender Pet</a></li>
+                        <li><a href="DoarPet.html" style="color: #673300">Doar Pet</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="Inicio.html" style="color: #673300"><span class="glyphicon glyphicon-user"></span> Hernan Matiello</a></li>
@@ -49,10 +49,10 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="well">
-                                <form style="text-align: left" id="doando">
-                                    <h1 style="text-align: center">Doe seu Pet</h1>
+                                <form style="text-align: left" id="vendendo">
+                                    <h1 style="text-align: center">Venda seu Pet</h1>
                                     <br>
-                                    <h4>Qual dos seus Pets você deseja doar?</h4>
+                                    <h4>Qual dos seus Pets você deseja vender?</h4>
                                     <select>
                                         <option value="rex">Rex (cachorro)</option>
                                         <option value="mel">Mel (gato)</option>
@@ -62,27 +62,38 @@
                                     </select>
                                     <br>
                                     <br>
-                                    <h4>Por que você deseja doar seu Pet?</h4>
-                                    <textarea name="message" rows="15" cols="50" placeholder="Insira o motivo da sua doação"></textarea><br>
+                                    <h4>Insira o preço do seu Pet:</h4>
+                                    <h5>R$ <input type="number" name="quantidade" placeholder="Preço"></h5>
                                     <br>
-                                    <button type="submit" value="enviar">Disponibilizar Pet para doação</button>
+                                    <h4>Qual forma de pagamento o cliente poderá usar?</h4>
+                                    <input type="checkbox" name="dinheiro"> Dinheiro<br>
+                                    <input type="checkbox" name="credito"> Crédito<br>
+                                    <input type="checkbox" name="debito"> Débito<br>
                                     <br>
+                                    <h4>O cliente poderá parcelar a compra?</h4>
+                                    <input type="radio" name="parcelar"> Sim<br>
+                                    <input type="radio" name="parcelar"> Não<br>
+                                    <br>
+                                    <h4>Se sim, em até quantas vezes?</h4>
+                                    <input type="number" name="Parcelas" min="1" max="12"><br>
+                                    <br>
+                                    <button type="submit" value="enviar">Disponibilizar Pet para venda</button>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
                 <script>
-                    function doacao(evento){
-                        var form = document.getElementById("doando");
+                    function venda(evento){
+                        var form = document.getElementById("vendendo");
                         
-                        alert('Seu Pet foi disponibilizado para adoção!');
-                        window.location.href = "SeusPetsDoado.html";
+                        alert('Seu Pet foi colocado à venda!');
+                        window.location.href = "SeusPetsVenda.html";
 
                         form.checkValidity();
                         evento.preventDefault();
                     }
-                    document.getElementById("doando").addEventListener("submit", function(event){doacao(event);})
+                    document.getElementById("vendendo").addEventListener("submit", function(event){venda(event);})
                 </script>
                 <div style="background-color:#FF6E00; border: 0px;" class="col-sm-2 well">
                     <div style="background-color:#ffa100; border: 0px;"  class="thumbnail">
@@ -95,7 +106,21 @@
                         <p><strong>Sexo: </strong>Masculino</p>
                         <p><strong>Data de nascimento: </strong>31/08/2005</p>
                         <p><strong>Preço: </strong>R$150,00</p>
-                        <button class="btn btn-secondary">Comprar</button>   
+                        <button class="btn btn-secondary">Comprar</button>
+                    </div>     
+                </div>
+                <div style="background-color:#FF6E00; border: 0px;" class="col-sm-2 well">
+                    <div style="background-color:#ffa100; border: 0px;"  class="thumbnail">
+                        <p>Cão de Rickão</p>
+                        <img src="assetsVitrine/imagem/petdog.jpg" alt="outrodog" width="400" height="300">
+                        <p style="color: green"><strong>Disponível para venda!</strong></p>
+                        <p><strong>Nome: </strong>Joãozinho</p>
+                        <p><strong>Animal: </strong>cachorro</p>
+                        <p><strong>Raça: </strong>Vira-lata</p>
+                        <p><strong>Sexo: </strong>Masculino</p>
+                        <p><strong>Data de nascimento: </strong>31/08/2005</p>
+                        <p><strong>Preço: </strong>R$150,00</p>
+                        <button class="btn btn-secondary">Comprar</button>
                     </div>     
                 </div>
             </div>
